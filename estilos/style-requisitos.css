@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+/* --------------------------------------------------------
+   ENCABEZADO SUPERIOR (LOGO + MENÚ)
+-------------------------------------------------------- */
+
+.contenedor-encabezado {
+    padding: 20px;
+    background-color: rgb(20, 24, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo + texto alineados */
+.contenedor-encabezado header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Texto VALORANT encabezado*/
+.contenedor-encabezado .logo-letra {
+    color: rgb(201, 48, 56);
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Imagen del logo */
+.contenedor-encabezado img {
+    height: 50px;
+    width: auto;
+}
+
+/* --------------------------------------------------------
+   MENÚ PRINCIPAL
+-------------------------------------------------------- */
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Links del menú */
+.menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu p{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: rgb(255, 70, 85);
+}
+
+/* --------------------------------------------------------
+   MENÚ DESPLEGABLE
+-------------------------------------------------------- */
+
+/* El li que contiene el submenú */
+.desplegable {
+    position: relative;
+}
+
+/* Estilo del submenu de informacion */
+.desplegable .contenido {
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    display: none;    
+    background: rgb(20, 24, 27);
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 4px;
+    min-width: 180px;
+    padding: 10px 0;
+    z-index: 999;      
+}
+
+/* Muestro el menu al pasar el raton por encima */
+.desplegable:hover .contenido {
+    display: block;
+}
+
+/* Estilos de los links dentro del desplegable */
+.contenido a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover del menu interno */
+.contenido a:hover {
+    background-color: rgb(201, 48, 56);
+}
+
+.requisitos{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* --------------------------------------------------------
+   TABLA
+-------------------------------------------------------- */
+
+
+/* Centrado de la tabla */
+.tabla {
+    margin: 40px auto;     
+    border-collapse: collapse;
+    width: 80%;             
+    text-align: center;
+}
+
+/* Le asigno bordes dobles a toda la tabla */
+.tabla, 
+.tabla th, 
+.tabla td {
+    border: 3px double #ffffff;  
+    padding: 12px;
+}
+
+/* Encabezado */
+.tabla th {
+    background-color: #111;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* filas */
+.tabla td {
+    background-color: #1b1b1b;
+    color: #ddd;
+}
+
+/* Alternor el color */
+.tabla tr:nth-child(even) td {
+    background-color: #222;
+}
+
