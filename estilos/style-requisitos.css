@@ -8,6 +8,7 @@
 /* --------------------------------------------------------
    ENCABEZADO SUPERIOR (LOGO + MENÚ)
 -------------------------------------------------------- */
+
 .contenedor-encabezado {
     padding: 20px;
     background-color: rgb(20, 24, 27);
@@ -23,9 +24,12 @@
     gap: 10px;
 }
 
-/* Texto VALORANT */
-.contenedor-encabezado h1 {
+/* Texto VALORANT encabezado*/
+.contenedor-encabezado .logo-letra {
     color: rgb(201, 48, 56);
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 /* Imagen del logo */
@@ -54,6 +58,12 @@
     color: white;
 }
 
+.menu p{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
 .menu a:hover {
     color: rgb(255, 70, 85);
 }
@@ -67,21 +77,21 @@
     position: relative;
 }
 
-/* Caja del submenú */
+/* Estilo del submenu de informacion */
 .desplegable .contenido {
     position: absolute;
-    top: 100%;         /* aparece debajo */
+    top: 100%;  
     left: 0;
-    display: none;     /* se muestra con hover */
+    display: none;    
     background: rgb(20, 24, 27);
     border: 1px solid rgb(50, 50, 50);
     border-radius: 4px;
     min-width: 180px;
     padding: 10px 0;
-    z-index: 999;      /* evita que rompa el header */
+    z-index: 999;      
 }
 
-/* Mostrar menú al pasar el ratón */
+/* Muestro el menu al pasar el raton por encima */
 .desplegable:hover .contenido {
     display: block;
 }
@@ -94,22 +104,53 @@
     text-decoration: none;
 }
 
-/* Hover del menú interno */
+/* Hover del menu interno */
 .contenido a:hover {
     background-color: rgb(201, 48, 56);
 }
 
-
-table{
-    border-color: black;
-    border: 2ch;
-    display: flex;
-    align-items: center;
+.requisitos{
+    text-align: center;
+    padding-top: 20px;
 }
 
-table thead{
-    border-color: black;
-    border: 2ch;
-    display: flex;
-    align-items: center;
+
+/* --------------------------------------------------------
+   TABLA
+-------------------------------------------------------- */
+
+
+/* Centrado de la tabla */
+.tabla {
+    margin: 40px auto;     
+    border-collapse: collapse;
+    width: 80%;             
+    text-align: center;
 }
+
+/* Le asigno bordes dobles a toda la tabla */
+.tabla, 
+.tabla th, 
+.tabla td {
+    border: 3px double #ffffff;  
+    padding: 12px;
+}
+
+/* Encabezado */
+.tabla th {
+    background-color: #111;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* filas */
+.tabla td {
+    background-color: #1b1b1b;
+    color: #ddd;
+}
+
+/* Alternor el color */
+.tabla tr:nth-child(even) td {
+    background-color: #222;
+}
+
