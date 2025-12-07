@@ -14,6 +14,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /* Logo + texto alineados */
@@ -106,4 +110,174 @@
 /* Hover del menú interno */
 .contenido a:hover {
     background-color: rgb(201, 48, 56);
+}
+
+/* --------------------------------------------------------
+   Estilo base
+-------------------------------------------------------- */
+.agentes .bajado{
+     width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0;
+    margin-top: auto;
+    letter-spacing: 2px;
+}
+
+.contenedor-agentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.agentes {
+    width: 330px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agentes img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.agentes .nombre {
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0;
+    margin-top: 12px;
+    letter-spacing: 2px;
+}
+
+.agentes:hover {
+    transform: translateY(-5px);
+}
+
+
+/* --------------------------------------------------------
+   Degradados
+-------------------------------------------------------- */
+
+.astra {
+    background: linear-gradient(180deg, #5e2ea7, #8a3df4, #d6b756);
+}
+
+.breach {
+    background: linear-gradient(180deg, #5b2c0f, #d35400, #ffb96a);
+}
+
+.brimstone {
+    background: linear-gradient(180deg, #d35400, #b33939, #6a1b1b);
+}
+
+.chamber {
+    background: linear-gradient(180deg, #d9b561, #8c6a31, #3b2a10);
+}
+
+.clove {
+    background: linear-gradient(180deg, #3a0f4d, #6b1f75, #9effc4);
+}
+
+
+.cypher {
+    background: linear-gradient(180deg, #00334e, #005b86, #8ad9ff);
+}
+
+.deadlock {
+    background: linear-gradient(180deg, #2a2a2a, #5f5f5f, #cfcfcf);
+}
+
+.fade {
+    background: linear-gradient(180deg, #2f1047, #5e2e79, #a689d4);
+}
+
+.gekko {
+    background: linear-gradient(180deg, #63a113, #a3ff3f, #e8ffba);
+}
+
+.harbor {
+    background: linear-gradient(180deg, #005f73, #0a9396, #94d2bd);
+}
+
+.iso {
+    background: linear-gradient(180deg, #5a0097, #8b00e6, #d08aff);
+}
+
+.jett {
+    background: linear-gradient(180deg, #3a8dff, #7fc0ff, #d0eaff);
+}
+
+.kayo {
+    background: linear-gradient(180deg, #001f36, #004d7a, #00bfff);
+}
+
+.kj {
+    background: linear-gradient(180deg, #005f4f, #00a36c, #ffe600);
+}
+
+.neon {
+    background: linear-gradient(180deg, #1717ff, #4f4fff, #66e8ff);
+}
+
+.omen {
+    background: linear-gradient(180deg, #1e1b4b, #5a4fcf, #9a8cff);
+}
+
+.phoenix {
+    background: linear-gradient(180deg, #ff4500, #ff7b00, #ffd000);
+}
+
+.raze {
+    background: linear-gradient(180deg, #ff6a00, #ff9a00, #ffe36a);
+}
+
+.reyna {
+    background: linear-gradient(180deg, #29003a, #6d0c7e, #c036ff);
+}
+
+.sage {
+    background: linear-gradient(180deg, #006b62, #00a89e, #8af2e2);
+}
+
+.skye {
+    background: linear-gradient(180deg, #2e6b3d, #4cad62, #baf2c5);
+}
+
+.sova {
+    background: linear-gradient(180deg, #123f6d, #446c9c, #b5d6ff);
+}
+
+.tejo {
+    background: linear-gradient(180deg, #b87932, #d69a52, #ffe7b5);
+}
+
+.veto {
+    background: linear-gradient(180deg, #0a3550, #126e9a, #70d4ff);
+}
+
+.viper {
+    background: linear-gradient(180deg, #0f3b1e, #1b8f4a, #9fe870);
+}
+
+.vyse {
+    background: linear-gradient(180deg, #002b49, #005f80, #6ec7ff);
+}
+
+.wally {
+    background: linear-gradient(180deg, #3c6f3c, #8ecf5b, #fff4c7);
+}
+
+.yoru {
+    background: linear-gradient(180deg, #001a72, #003bff, #ce7328);
 }
