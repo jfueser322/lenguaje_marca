@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="estilos/style-asistencia.css">
-     <link rel="stylesheet" href="estilos/style-encabezado.css">
+    <title>ASISTENCIA</title>
+    <link rel="stylesheet" href="estilos/style-asistencia.css">
+    <link rel="stylesheet" href="estilos/style-encabezado-footer.css">
 </head>
+
 <body>
-<body>
-    <div class="contedor-principal">
+
+    <div class="contenedor-principal">
 
         <div class="contenedor-encabezado">
             <header>
@@ -21,55 +22,49 @@
                 <ul>
                     <li class="desplegable">
                         <p>INFORMACIÓN DEL JUEGO</p>
-                    
-
                         <div class="contenido">
                             <a href="pagina-desplegables/agentes.html">AGENTES</a>
                             <a href="pagina-desplegables/armas.html">ARMAS</a>
-                            <a href="www.google.com">menu 3</a>
+                            <a href="https://www.google.com">menu 3</a>
                         </div>
                     </li>
 
-
                     <li><a href="lore.html">LORE</a></li>
                     <li><a href="requisitos.html">REQUISITOS</a></li>
-                    <li><a href="asistencia.html">ASISTENCIA</a></li>       
+                    <li><a href="asistencia.html">ASISTENCIA</a></li>
                 </ul>
             </nav>
         </div>
 
-<h1 id="problemas">¿Tienes problemas?</h1>
-<p>Estamos aqui para ayudarte a resolver tu problema</p>    
+        <h1 id="problemas">¿Tienes problemas?</h1>
+        <p class="p-formulario">Estamos aquí para ayudarte a resolver tu problema</p>
 
-<form method="post" action="form.php">
-    
-<input type="text" id="nombre"placeholder="Nombre de la cuenta:">
+        <form method="post" action="form.php">
+            <input type="text" id="nombre" placeholder="Nombre de la cuenta:">
+            <input type="email" id="correo" placeholder="Correo electrónico:">
 
-<input type="email" id="correo" placeholder="Correo electronico:">
+            <label for="caso">Selecciona el motivo de asistencia:</label>
+            <select id="caso" name="caso" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="problema-cuenta">Problemas con la cuenta</option>
+                <option value="recuperar-acceso">Recuperación de acceso</option>
+                <option value="problemas-juego">Errores dentro del juego</option>
+                <option value="rendimiento">Bajo rendimiento o FPS</option>
+                <option value="reportes-jugadores">Reportes de jugadores</option>
+                <option value="problemas-pagos">Problemas con compras o pagos</option>
+                <option value="otro">Otro tipo de consulta</option>
+            </select>
 
-<label for="caso">Selecciona el motivo de asistencia:</label>
-<select id="caso" name="caso" required>
-    <option value="">-- Selecciona una opción --</option>
-    <option value="problema-cuenta">Problemas con la cuenta</option>
-    <option value="recuperar-acceso">Recuperación de acceso</option>
-    <option value="problemas-juego">Errores dentro del juego</option>
-    <option value="rendimiento">Bajo rendimiento o FPS</option>
-    <option value="reportes-jugadores">Reportes de jugadores</option>
-    <option value="problemas-pagos">Problemas con compras o pagos</option>
-    <option value="otro">Otro tipo de consulta</option>
-</select>
+            <input type="submit">
+        </form>
 
+    </div> 
 
-<input type="submit">
-
-
-
-
-
-
-    </form>
-
-
+    <footer class="footer">
+        <div class="footer-contenido">
+            <p class="p-footer">© 2025 VALORANT — TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+    </footer>
 
 </body>
 </html>

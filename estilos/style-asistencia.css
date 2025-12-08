@@ -1,9 +1,6 @@
-
-
 /* --------------------------------------------------------
    FORMULARIO
 -------------------------------------------------------- */
-
 
 /* Contenedor general */
 
@@ -17,13 +14,13 @@ form, h1{
     color: #000;
     
 }
-p{
+.p-formulario{
     font-size: 20px;
     text-align: center;
     color: #000;
 }
 
-/* Centrar y espaciar los elementos del formulario */
+/* Centra y espacia los elementos del formulario */
 form {
     width: 100%;
     max-width: 450px;

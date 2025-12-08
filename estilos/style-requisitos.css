@@ -1,12 +1,12 @@
 /* --------------------------------------------------------
-   TABLA
+   Tabla
 -------------------------------------------------------- */
 
 /*Requisitos*/
 #requisitos{
     padding-top: 30px;
     text-align: center;
-    padding-top: 20px;
+   
 }
 
 
@@ -39,7 +39,7 @@
     color: #ddd;
 }
 
-/* Alternor el color */
+/* Alterno el color */
 .tabla tr:nth-child(even) td {
     background-color: #222;
 }

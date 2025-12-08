@@ -1,3 +1,9 @@
+.h-agentes {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
 /* --------------------------------------------------------
    Estilo base
 -------------------------------------------------------- */
@@ -75,9 +81,8 @@
     background: linear-gradient(180deg, #3a0f4d, #6b1f75, #9effc4);
 }
 
-
 .cypher {
-    background: linear-gradient(180deg, #00334e, #005b86, #8ad9ff);
+    background: linear-gradient(180deg, #b9b9b9 20%, #131319 100%);
 }
 
 .deadlock {
@@ -85,7 +90,7 @@
 }
 
 .fade {
-    background: linear-gradient(180deg, #2f1047, #5e2e79, #a689d4);
+    background: linear-gradient(180deg,#2d3d59 0%,#261831 35%,#1b2230 70%,#0a0d11 100%);
 }
 
 .gekko {
@@ -109,7 +114,7 @@
 }
 
 .kj {
-    background: linear-gradient(180deg, #005f4f, #00a36c, #ffe600);
+    background: linear-gradient(180deg,#e8bb34 0%,#f8f868 65%,#4fbb66 80%,#2b3441 100%);
 }
 
 .neon {
@@ -157,11 +162,11 @@
 }
 
 .vyse {
-    background: linear-gradient(180deg, #002b49, #005f80, #6ec7ff);
+    background: linear-gradient(180deg,#14394d 0%,#2a1f45 40%,#4e28a8 70%,#8a7394 100%);
 }
 
 .wally {
-    background: linear-gradient(180deg, #3c6f3c, #8ecf5b, #fff4c7);
+    background: linear-gradient(180deg,#ff3e4e 0%,#ff6a2d 22%,#4d2d6a 55%,#0f1e2b 100%);
 }
 
 .yoru {
