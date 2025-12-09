@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos/style-armas.css">
+    <link rel="stylesheet" href="../estilos/style-armas.css">
      <link rel="stylesheet" href="../estilos/style-encabezado-footer.css">
 </head>
 <body>
 <div class="contenedor-principal">
         <div class="contenedor-encabezado">
             <header>
-                <a href="../index.html" class="logo-letra">VALORANT</a>
-                <img src="../recursos/logopng.png" alt="Logo de VALORANT">
+                <a href="../index.html" class="logo-letra">VALORANT</a> <!--Le agrego un enlace al texto Valorant para que me mande al menu principal-->
+                <img src="../recursos/logopng.png">     <!--El logo del juego-->
             </header>
 
             <nav class="menu">
+                            <!--Agrego una lista que seran links de las demas paginas-->
                 <ul>
                     <li class="desplegable">
                         <p>INFORMACIÓN DEL JUEGO</p>
-                        
+
+                                  <!--Agrego una lista desplegable-->
                         <div class="contenido">
                             <a href="../pagina-desplegables/agentes.html">AGENTES</a>
                             <a href="../pagina-desplegables/armas.html">ARMAS</a>
@@ -27,6 +29,7 @@
                         </div>
                     </li>
 
+                        <!--Los demas links de la pagina-->
                     <li><a href="../lore.html">LORE</a></li>
                     <li><a href="../requisitos.html">REQUISITOS</a></li>
                     <li><a href="../asistencia.html">ASISTENCIA</a></li>     
@@ -35,31 +38,58 @@
         </div>
 
 
-<table>
-<tr>
-    <th>ARMAS DE MANO</th>
-</tr>
-<tr>
-    <td>
-        <img src="../recursos/classic.avif" width="100px" height="100px">
-        CLASSIC</td>
-</tr>
-<tr>
-    <td>SHORTY</td>
-</tr>
-<tr>
-    <td>FRENZY</td>
-</tr>
-<tr>
-    <td>GHOST</td>
-</tr>
-<tr>
-    <td>SHERRIF</td>
-</tr>
-<tr>
-    <td>CLASSIC</td>
-</tr>
-</table>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Armas de Mano - Valorant</title>
+            <link rel="stylesheet" href="estilos/armas-de-mano.css">
+        </head>
+        <body>
+            <div class="contenedor-armas-mano">
+                <h1>ARMAS DE MANO</h1>
+                <div class="tabla-armas-mano">
+                    <div class="arma">
+                        <img src="../recursos/classic.avif" alt="Classic">
+                        <div class="info">
+                            <p class="nombre">CLASSIC</p>
+                            <p class="precio">Precio: Gratis</p>
+                        </div>
+                    </div>
+                    <div class="arma">
+                        <img src="../recursos/shorty.avif" alt="Shorty">
+                        <div class="info">
+                            <p class="nombre">SHORTY</p>
+                            <p class="precio">Precio: 200$</p>
+                        </div>
+                    </div>
+                    <div class="arma">
+                        <img src="../recursos/frenzy.avif" alt="Frenzy">
+                        <div class="info">
+                            <p class="nombre">FRENZY</p>
+                            <p class="precio">Precio: 500$</p>
+                        </div>
+                    </div>
+                    <div class="arma">
+                        <img src="../recursos/ghost.avif" alt="Ghost">
+                        <div class="info">
+                            <p class="nombre">GHOST</p>
+                            <p class="precio">Precio: 500$</p>
+                        </div>
+                    </div>
+                    <div class="arma">
+                        <img src="../recursos/sherrif.avif" alt="Sherrif">
+                        <div class="info">
+                            <p class="nombre">SHERRIF</p>
+                            <p class="precio">Precio: 800$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        
 
 <table>
     <tr>

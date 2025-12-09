@@ -9,28 +9,29 @@
 </head>
 
 <body>
+ 
     <div class="contedor-principal">
 
         <div class="contenedor-encabezado">
             <header>
-                <a href="index.html" class="logo-letra">VALORANT</a>
-                <img src="recursos/logopng.png">
+                <a href="index.html" class="logo-letra">VALORANT</a>    <!--Le agrego un enlace al texto Valorant para que me mande al menu principal-->
+                <img src="recursos/logopng.png">    <!--El logo del juego-->
             </header>
 
             <nav class="menu">
+                    <!--Agrego una lista que seran links de las demas paginas-->
                 <ul>
                     <li class="desplegable">
                         <p>INFORMACIÓN DEL JUEGO</p>
                     
-
+                             <!--Agrego una lista desplegable-->
                         <div class="contenido">
-                            <a href="pagina-desplegables/agentes.html">AGENTES</a>
+                            <a href="pagina-desplegables/agentes.html">AGENTES</a> 
                             <a href="pagina-desplegables/armas.html">ARMAS</a>
-                            <a href="www.google.com">menu 3</a>
                         </div>
                     </li>
 
-
+                        <!--Los demas links de la pagina-->
                     <li><a href="lore.html">LORE</a></li>
                     <li><a href="requisitos.html">REQUISITOS</a></li>
                     <li><a href="asistencia.html">ASISTENCIA</a></li>       
@@ -38,20 +39,21 @@
             </nav>
         </div>
 
+           <!--Contiene los cuadros debajo del encabezado-->
         <div class="contenedor-cuadros">
             <div class="contenedor-1">
                 <video autoplay muted loop>
-                        <source src="recursos/video-main.mp4" type="video/mp4">
+                        <source src="recursos/video-main.mp4" type="video/mp4">    <!--Agrego el video del fondo-->
                 </video>
 
                 <h1>VALORANT</h1>
 
-                <a href="https://playvalorant.com/es-es/">
+                <a href="https://playvalorant.com/es-es/">    <!--Le meto un link al boton para que mande a la pagina principal-->
                             <button>JUEGA AHORA</button>
                 </a>                
             </div>
-
-            <div class="contenedor-2">
+            <!--Segun cuadro que dice SOBRE-->
+            <div class="contenedor-2"> 
                 <h1>SOBRE</h1>
                 <br>
                 <p>Vive la experiencia de un Tactical Shooter 5vs5<br>
@@ -60,33 +62,43 @@
                     <br>
                     Demostrando tu habilidad en el campo de batalla.
                 </p>
+
+                <video autoplay muted loop id="video-sobre">
+                    <source src="recursos/video-sobre.mp4" type="video/mp4">    <!--Agrego el video del fondo-->
+                </video>
+
             </div>
 
+            <!--Tercer cuadro que tiene los 3 cuadritos debajo-->
             <div class="contenedor-3">
                 <h1>NOTICIAS</h1>
-                <div class="contenedor-tarjetas">
+                <div class="contenedor-tarjetas">  <!--Cada imagen de las noticas esta enlazacado a la pagina oficial del juego-->
                     <div class="tarjeta">
-                        <h2>NOTICIAS</h2>
-                        <p>Últimas actualizaciones, eventos y novedades sobre Valorant.</p>
+                        <img src="recursos/f38ff7c33e1d8eb7544ba55d9d76271ecd1b6dd5-1920x1080.webp" width="365.33px" height="205.48">
+                        <h2>VALORANT Champions Tour:</h2>
+                        <p>¡Premios de la temporada!</p>
                         <button>Leer más</button>
                     </div>
 
                     <div class="tarjeta">
-                        <h2>AGENTES</h2>
-                        <p>Conoce a todos los agentes, sus habilidades y roles en el juego.</p>
+                        <img src="recursos/067e935124297f4d8cf401ca67a3a5901d607ed8-1920x1080.avif" width="365.33px" height="205.48">
+                        <h2>Inicio de la temporada 2026 del VCT:</h2>
+                        <p>Todo lo que necesitáis saber</p>
                         <button>Ver agentes</button>
                     </div>
 
                     <div class="tarjeta">
-                        <h2>MAPAS</h2>
-                        <p>Explora los mapas competitivos de Valorant y aprende sus estrategias.</p>
+                        <img src="recursos/0dcc6310076140abaaf4a37dea2ae2732de4b4e1-1920x1080.webp" width="365.33px" height="205.48">
+                        <h2>Notas de la versión 11.11</h2>
+                        <p>Actualizaciones menores a la interfaz, correcciones, regalos de PV y una sorpresa festiva próxima.</p>
                         <button>Explorar mapas</button>
                     </div>
                 </div>
             </div>
 
         </div>
-
+        
+ <!--Footer de la pagina-->
     
 <footer class="footer">
     <div class="footer-contenido">
