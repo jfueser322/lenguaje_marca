@@ -1,68 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Anton', sans-serif;
-}
+/* --------------------------------------------------------
+   Armas
+-------------------------------------------------------- */
 
-body {
+.contenedor-armas {
+    border-top: 2px solid rgb(201, 48, 56); /*Le añadi un color al borde de arriba para separarlo del encabezado*/
+    width: 100%;
+    margin: auto;
+    padding: 40px 20px;
     background-color: #14181B;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
 }
 
-.contenedor-armas-mano {
-    width: 90%;
-}
-
-h1 {
+/* Títulos de categoría */
+.categoria {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 40px 0 20px;
     color: rgb(201, 48, 56);
+    font-size: 28px;
 }
 
-.tabla-armas-mano {
+/* Contenedor de tarjetas */
+.tabla-armas {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
 }
 
+/* Tarjeta del arma */
 .arma {
-    background-color: rgba(255, 255, 255, 0.05); /* bordes transparentes */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    width: 140px;
-    padding: 40px;
+    background-color: #1A1F23;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    width: 180px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s;
+    transition: transform 0.25s;
 }
 
 .arma:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .arma img {
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 12px;
 }
 
+/* Información */
 .info {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .nombre {
     color: white;
+    font-weight: bold;
 }
 
 .precio {

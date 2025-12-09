@@ -56,21 +56,28 @@
     padding: 100px;
     width: 100%;
     color: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.contenedor-2 h1 {
-    margin-top: -80px;
+.contenedor-2 p {
+    padding-top: 10px;
+    font-size: 25px;
 }
 
-#video-sobre{
-    width: 1200px;
-    height: 500px;
-    position: relative;
-    right: -650px;
-    top: -50px;
-   
+/* Columna izquierda */
+.texto h1 {
+    margin-bottom: 20px;
+    color: rgb(201, 48, 56);
 }
 
+/* Video */
+#video-sobre {
+    width: 600px;
+    border-radius: 10px;
+    margin-left: auto;
+}
 
 /* --------------------------------------------------------
   Tercer cuadro - Mas
@@ -86,51 +93,67 @@
 .contenedor-tarjetas {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 40px;
+    align-items: flex-start; /*Esto hace que inicie desde arriba*/
+    gap: 40px;
+    padding: 50px;
 }
 
-/* Estilo base para las tarjetas */
+/* Tarjetas estilo base*/
 .tarjeta {
-    width: 260px;
+    width: 320px;
+    height: 480px;               
     background-color: #1D2326;
-    padding: 25px;
-    border-radius: 12px;
+    padding: 30px;
+    border-radius: 14px;
     border: 2px solid #C93038;
     color: white;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;             
+    flex-direction: column;       
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Hace que se eleve al pasar el raton por encima*/
+                                                            /*El 0.3 es el tiempo que tarda en subir*/
 }
 
 .tarjeta:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 20px rgba(255, 70, 85, 0.2);
+    transform: translateY(-12px);
+    box-shadow: 0px 10px 25px rgba(255, 70, 85, 0.25);
 }
 
-/* Título de tarjetas */
+.tarjeta img {
+    width: 100%;
+    height: 180px;          
+    object-fit: cover;    /*Esto evita que se deformen las imagenes*/
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Títulos */
 .tarjeta h2 {
     letter-spacing: 2px;
     margin-bottom: 15px;
     color: #FF4655;
+    font-size: 22px;
 }
 
-/* Texto de tarjetas */
+/* Texto */
 .tarjeta p {
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.3;
     margin-bottom: 20px;
+    flex-grow: 1;                 /* Empuja el botón hacia abajo de forma uniforme */
 }
 
-/* Botón*/
+/* Botón */
 .tarjeta button {
     background-color: #FF4655;
     border: none;
-    padding: 10px 18px;
+    padding: 12px 22px;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -138,5 +161,6 @@
 .tarjeta button:hover {
     background-color: #D73C48;
 }
+
 
 

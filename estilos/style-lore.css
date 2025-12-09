@@ -1,0 +1,37 @@
+/* --------------------------------------------------------
+  Texto del lore
+-------------------------------------------------------- */
+
+.lore{
+    width: 100%;
+    border-radius: 20px;
+    border-color: black;
+    text-align: justify;
+}
+
+.lore h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.lore p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    
+}
+
+/* --------------------------------------------------------
+  Audio
+-------------------------------------------------------- */
+
+/* Estilo del boton para centrar */
+.audio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
